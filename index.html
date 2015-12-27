@@ -33,38 +33,37 @@
                      }
                   }
                   function interact(event){
-                     event.stopPropagation();
                      var tempcircle = paper.circle(event.clientX - 5, event.clientY - 7, R).attr("fill", "green");
                      if(selected_circle == null){
+                        event.stopPropagation();
                         circles[tempcircle.id] = tempcircle;
                         circles[tempcircle.id].click(clickedCircle);
                         circles_count++;
                      }
                      else{
+                        event.stopPropagation();
                         circles[selected_circle].attr({cx: event.clientX - 5, cy:event.clientY - 7, fill: "green" });
                         paths.forEach(changePath);
                         selected_circle = null;
                      }
                   }
                function clickedCircle(event){
-                  event.stopPropagation();
                   var path = "";
                   if(selected_circle == null){
                      event.stopPropagation();
                      selected_circle = this.id
-                     circles[selected_circle].animate({fill: "black"}, 1, "linear");
+                     circles[selected_circle].attr({fill: "black"});
                   }
                   else{
                      event.stopPropagation();
                      path = "M" + (circles[selected_circle].getBBox().x + 5) + "," + (circles[selected_circle].getBBox().y + 5) + "L" + (this.getBBox().x + 5) + "," + (this.getBBox().y + 5);
                      if(!isInsidePath(paths, {begin: selected_circle, end: this.id})){
                         paths.push({begin: selected_circle, end: this.id, path: paper.path(path)});
-                  }
+                     }
                      circles[selected_circle].animate({fill: 'green'});
                      circles[selected_circle].toFront();
                      this.toFront();
                      selected_circle = null;
-                     
                   }
                }
                function changePath(element, index, array){
