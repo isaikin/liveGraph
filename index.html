@@ -1,97 +1,98 @@
 <html>
    <head>
-   		<title> LiveGraph v0.1 </title>
-   		<meta charset = "UTF-8">
-   		<link rel="stylesheet" type="text/css" href="style.css">
-   	</head>
-   	<body>
-   		<div id = "DrawingSurface"></div>
-   		<button id = "RemoveButton">Remove selected vertex</button>
-   		<button id = "BFS Button">Show BFS</button>
-   		<script src = "jquery.js"></script>
-   		<script src = "Raphael.js"></script>
-   		<script>
-   			(function(Raphael, $, undefined){
-
-   				var paper = Raphael,
-   					circles = [],
-   					circles_count = 0,
-   					R = 10,
-   					selected_circle = null,
-   					paths = [];
-   					paper.rect(0, 0, 300, 300);
-   					$('#DrawingSurface').on('click', interact);
-   					$('#RemoveButton').on('click', remove);
-   					function remove(event){
-   						event.stopPropagation();
-   						if(selected_circle == null){
-   							alert("No vertex was selected");
-   						}
-   						else{
-	   						paths.forEach(removePath)
-	   						circles[selected_circle].remove();
-	   						selected_circle = null;
-   						}
-   					}
-   					function interact(event){
-   						var tempcircle = paper.circle(event.clientX - 5, event.clientY - 7, R).attr("fill", "green");
-   						if(selected_circle == null){
-	   						circles[tempcircle.id] = tempcircle;
-	   						circles[tempcircle.id].click(clickedCircle);
-	   						circles_count++;
-   						}
-   						else{
-   							circles[selected_circle].attr({cx: event.clientX - 5, cy:event.clientY - 7, fill: "green" });
-   							paths.forEach(changePath);
-   							selected_circle = null;
-   						}
-   					}
-   				function clickedCircle(event){
-   					var path = "";
-   					if(selected_circle == null){
-   						event.stopPropagation();
-	   					selected_circle = this.id
-	   					circles[selected_circle].animate({fill: "black"}, 1, "linear");
-   					}
-   					else{
-   						event.stopPropagation();
-   						path = "M" + (circles[selected_circle].getBBox().x + 5) + "," + (circles[selected_circle].getBBox().y + 5) + "L" + (this.getBBox().x + 5) + "," + (this.getBBox().y + 5);
-   						if(!isInsidePath(paths, {begin: selected_circle, end: this.id, path: paper.path(path)})){
-   							paths.push({begin: selected_circle, end: this.id, path: paper.path(path)});
-   					}
-   						circles[selected_circle].animate({fill: 'green'});
-   						circles[selected_circle].toFront();
-   						this.toFront();
-   						selected_circle = null;
-   						
-   					}
-   				}
-   				function changePath(element, index, array){
-   					if(element.begin == selected_circle){
-	   					var path = "M" + (circles[element.begin].getBBox().x + 5) + "," + (circles[element.begin].getBBox().y + 5) + "L" + (circles[element.end].getBBox().x  + 5) + "," + (circles[element.end].getBBox().y + 5);
-	   					element.path.attr({path: path});
-   					}
-   					else if(element.end == selected_circle){
-   						var path = "M" + (circles[element.end].getBBox().x + 5) + "," + (circles[element.end].getBBox().y + 5) + "L" + (circles[element.begin].getBBox().x  + 5) + "," + (circles[element.begin].getBBox().y + 5);
-	   					element.path.attr({path: path});
-   					}
-   				}
-   				function removePath(element, index, array){
-   					 if(element.begin == selected_circle || element.end == selected_circle){
-   						element.path.remove();
-   						element.begin = null;
-   						element.end = null;
-   					}
-   				}
-   				function isInsidePath(paths, path){
-   					for(var i = 0; i < paths.length; i++){
-   						if(paths[i].begin == path.begin && paths[i].end == path.end){
-   							return true;
-   						}
-   					}
-   					return false;
-   				}
-   			})(new Raphael("DrawingSurface", 300, 300), jQuery);
-   		</script>
-   	</body>
+         <title> LiveGraph v0.1 </title>
+         <meta charset = "UTF-8">
+         <link rel="stylesheet" type="text/css" href="style.css">
+      </head>
+      <body>
+         <div id = "DrawingSurface"></div>
+         <button id = "RemoveButton">Remove selected vertex</button>
+         <button id = "BFS Button">Show BFS</button>
+         <script src = "jquery.js"></script>
+         <script src = "Raphael.js"></script>
+         <script>
+            (function(Raphael, $, undefined){
+               var paper = Raphael,
+                  circles = [],
+                  circles_count = 0,
+                  R = 10,
+                  selected_circle = null,
+                  paths = [];
+                  paper.rect(0, 0, 300, 300);
+                  $('#DrawingSurface').on('click', interact);
+                  $('#RemoveButton').on('click', remove);
+                  function remove(event){
+                     event.stopPropagation();
+                     if(selected_circle == null){
+                        alert("No vertex was selected");
+                     }
+                     else{
+                        paths.forEach(removePath)
+                        circles[selected_circle].remove();
+                        selected_circle = null;
+                     }
+                  }
+                  function interact(event){
+                     event.stopPropagation();
+                     var tempcircle = paper.circle(event.clientX - 5, event.clientY - 7, R).attr("fill", "green");
+                     if(selected_circle == null){
+                        circles[tempcircle.id] = tempcircle;
+                        circles[tempcircle.id].click(clickedCircle);
+                        circles_count++;
+                     }
+                     else{
+                        circles[selected_circle].attr({cx: event.clientX - 5, cy:event.clientY - 7, fill: "green" });
+                        paths.forEach(changePath);
+                        selected_circle = null;
+                     }
+                  }
+               function clickedCircle(event){
+                  event.stopPropagation();
+                  var path = "";
+                  if(selected_circle == null){
+                     event.stopPropagation();
+                     selected_circle = this.id
+                     circles[selected_circle].animate({fill: "black"}, 1, "linear");
+                  }
+                  else{
+                     event.stopPropagation();
+                     path = "M" + (circles[selected_circle].getBBox().x + 5) + "," + (circles[selected_circle].getBBox().y + 5) + "L" + (this.getBBox().x + 5) + "," + (this.getBBox().y + 5);
+                     if(!isInsidePath(paths, {begin: selected_circle, end: this.id})){
+                        paths.push({begin: selected_circle, end: this.id, path: paper.path(path)});
+                  }
+                     circles[selected_circle].animate({fill: 'green'});
+                     circles[selected_circle].toFront();
+                     this.toFront();
+                     selected_circle = null;
+                     
+                  }
+               }
+               function changePath(element, index, array){
+                  if(element.begin == selected_circle){
+                     var path = "M" + (circles[element.begin].getBBox().x + 5) + "," + (circles[element.begin].getBBox().y + 5) + "L" + (circles[element.end].getBBox().x  + 5) + "," + (circles[element.end].getBBox().y + 5);
+                     element.path.attr({path: path});
+                  }
+                  else if(element.end == selected_circle){
+                     var path = "M" + (circles[element.end].getBBox().x + 5) + "," + (circles[element.end].getBBox().y + 5) + "L" + (circles[element.begin].getBBox().x  + 5) + "," + (circles[element.begin].getBBox().y + 5);
+                     element.path.attr({path: path});
+                  }
+               }
+               function removePath(element, index, array){
+                   if(element.begin == selected_circle || element.end == selected_circle){
+                     element.path.remove();
+                     element.begin = null;
+                     element.end = null;
+                  }
+               }
+               function isInsidePath(paths, path){
+                  for(var i = 0; i < paths.length; i++){
+                     if(paths[i].begin == path.begin && paths[i].end == path.end){
+                        return true;
+                     }
+                  }
+                  return false;
+               }
+            })(new Raphael("DrawingSurface", 300, 300), jQuery);
+         </script>
+      </body>
 </html>
