@@ -1,0 +1,10 @@
+C:\Users\Viktor_Isaikin\documents\visual studio 2017\Projects\LiveGraph\LiveGraph.UI\bin\Debug\netcoreapp1.1\LiveGraph.UI.deps.json
+C:\Users\Viktor_Isaikin\documents\visual studio 2017\Projects\LiveGraph\LiveGraph.UI\bin\Debug\netcoreapp1.1\LiveGraph.UI.runtimeconfig.json
+C:\Users\Viktor_Isaikin\documents\visual studio 2017\Projects\LiveGraph\LiveGraph.UI\bin\Debug\netcoreapp1.1\LiveGraph.UI.runtimeconfig.dev.json
+C:\Users\Viktor_Isaikin\documents\visual studio 2017\Projects\LiveGraph\LiveGraph.UI\bin\Debug\netcoreapp1.1\LiveGraph.UI.dll
+C:\Users\Viktor_Isaikin\documents\visual studio 2017\Projects\LiveGraph\LiveGraph.UI\obj\Debug\netcoreapp1.1\LiveGraph.UI.csprojResolveAssemblyReference.cache
+C:\Users\Viktor_Isaikin\documents\visual studio 2017\Projects\LiveGraph\LiveGraph.UI\obj\Debug\netcoreapp1.1\LiveGraph.UI.AssemblyInfo.cs
+C:\Users\Viktor_Isaikin\Documents\Visual Studio 2017\Projects\LiveGraph\LiveGraph.UI\bin\Debug\netcoreapp1.1\LiveGraph.UI.pdb
+C:\Users\Viktor_Isaikin\Documents\Visual Studio 2017\Projects\LiveGraph\LiveGraph.UI\obj\Debug\netcoreapp1.1\UserSecretsAssemblyInfo.cs
+C:\Users\Viktor_Isaikin\Documents\Visual Studio 2017\Projects\LiveGraph\LiveGraph.UI\obj\Debug\netcoreapp1.1\LiveGraph.UI.dll
+C:\Users\Viktor_Isaikin\Documents\Visual Studio 2017\Projects\LiveGraph\LiveGraph.UI\obj\Debug\netcoreapp1.1\LiveGraph.UI.pdb
