@@ -1,0 +1,13 @@
+C:\Users\isaik\OneDrive\liveGraph-develop\LiveGraph\LiveGraph.DAL\bin\Debug\netcoreapp1.1\LiveGraph.DAL.deps.json
+C:\Users\isaik\OneDrive\liveGraph-develop\LiveGraph\LiveGraph.DAL\bin\Debug\netcoreapp1.1\LiveGraph.Common.dll
+C:\Users\isaik\OneDrive\liveGraph-develop\LiveGraph\LiveGraph.DAL\bin\Debug\netcoreapp1.1\LiveGraph.InterfaceBLL.dll
+C:\Users\isaik\OneDrive\liveGraph-develop\LiveGraph\LiveGraph.DAL\bin\Debug\netcoreapp1.1\LiveGraph.InterfaceDao.dll
+C:\Users\isaik\OneDrive\liveGraph-develop\LiveGraph\LiveGraph.DAL\obj\Debug\netcoreapp1.1\LiveGraph.DAL.AssemblyInfo.cs
+C:\Users\isaik\OneDrive\liveGraph-develop\LiveGraph\LiveGraph.DAL\bin\Debug\netcoreapp1.1\LiveGraph.DAL.dll
+C:\Users\isaik\OneDrive\liveGraph-develop\LiveGraph\LiveGraph.DAL\bin\Debug\netcoreapp1.1\LiveGraph.DAL.pdb
+C:\Users\isaik\OneDrive\liveGraph-develop\LiveGraph\LiveGraph.DAL\bin\Debug\netcoreapp1.1\LiveGraph.Common.pdb
+C:\Users\isaik\OneDrive\liveGraph-develop\LiveGraph\LiveGraph.DAL\bin\Debug\netcoreapp1.1\LiveGraph.InterfaceBLL.pdb
+C:\Users\isaik\OneDrive\liveGraph-develop\LiveGraph\LiveGraph.DAL\bin\Debug\netcoreapp1.1\LiveGraph.InterfaceDao.pdb
+C:\Users\isaik\OneDrive\liveGraph-develop\LiveGraph\LiveGraph.DAL\obj\Debug\netcoreapp1.1\LiveGraph.DAL.csprojResolveAssemblyReference.cache
+C:\Users\isaik\OneDrive\liveGraph-develop\LiveGraph\LiveGraph.DAL\obj\Debug\netcoreapp1.1\LiveGraph.DAL.dll
+C:\Users\isaik\OneDrive\liveGraph-develop\LiveGraph\LiveGraph.DAL\obj\Debug\netcoreapp1.1\LiveGraph.DAL.pdb

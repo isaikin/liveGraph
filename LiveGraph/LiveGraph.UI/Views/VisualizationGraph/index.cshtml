@@ -1,0 +1,18 @@
+
+@{
+    ViewData["Title"] = "View";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@section Css {
+
+    <link href="~/css/VisualizationGraph.css" rel="stylesheet" />
+}
+<div id="Graph">
+</div>
+@section Scripts {
+
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="~/js/VisualizationGraph.js"></script>
+}

@@ -1,0 +1,8 @@
+@model PageEditor
+@using (Html.BeginForm("CreateUser", "Home",
+                new { id = "MyIdValue" },
+                FormMethod.Post,
+                new { @class = "userCssClass", data_formType = "user" }))
+{
+    ...
+}

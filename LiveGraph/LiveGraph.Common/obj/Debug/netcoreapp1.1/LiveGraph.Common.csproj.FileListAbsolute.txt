@@ -1,0 +1,7 @@
+C:\Users\isaik\OneDrive\liveGraph-develop\LiveGraph\LiveGraph.Common\bin\Debug\netcoreapp1.1\LiveGraph.Common.deps.json
+C:\Users\isaik\OneDrive\liveGraph-develop\LiveGraph\LiveGraph.Common\bin\Debug\netcoreapp1.1\LiveGraph.Common.dll
+C:\Users\isaik\OneDrive\liveGraph-develop\LiveGraph\LiveGraph.Common\bin\Debug\netcoreapp1.1\LiveGraph.Common.pdb
+C:\Users\isaik\OneDrive\liveGraph-develop\LiveGraph\LiveGraph.Common\obj\Debug\netcoreapp1.1\LiveGraph.Common.csprojResolveAssemblyReference.cache
+C:\Users\isaik\OneDrive\liveGraph-develop\LiveGraph\LiveGraph.Common\obj\Debug\netcoreapp1.1\LiveGraph.Common.AssemblyInfo.cs
+C:\Users\isaik\OneDrive\liveGraph-develop\LiveGraph\LiveGraph.Common\obj\Debug\netcoreapp1.1\LiveGraph.Common.dll
+C:\Users\isaik\OneDrive\liveGraph-develop\LiveGraph\LiveGraph.Common\obj\Debug\netcoreapp1.1\LiveGraph.Common.pdb

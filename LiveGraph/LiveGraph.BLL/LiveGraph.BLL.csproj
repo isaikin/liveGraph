@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Security.Claims" Version="4.3.0" />
+    <PackageReference Include="System.Security.Cryptography.Algorithms" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LiveGraph.InterfaceBLL\LiveGraph.InterfaceBLL.csproj" />
+    <ProjectReference Include="..\LiveGraph.InterfaceDao\LiveGraph.InterfaceDao.csproj" />
+    <ProjectReference Include="..\LiveGraph.Validation\LiveGraph.Validation.csproj" />
+  </ItemGroup>
+
+</Project>

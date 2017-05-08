@@ -1,0 +1,9 @@
+C:\Users\isaik\OneDrive\liveGraph-develop\LiveGraph\LiveGraph.InterfaceDao\bin\Debug\netcoreapp1.1\LiveGraph.InterfaceDao.deps.json
+C:\Users\isaik\OneDrive\liveGraph-develop\LiveGraph\LiveGraph.InterfaceDao\bin\Debug\netcoreapp1.1\LiveGraph.InterfaceDao.dll
+C:\Users\isaik\OneDrive\liveGraph-develop\LiveGraph\LiveGraph.InterfaceDao\bin\Debug\netcoreapp1.1\LiveGraph.InterfaceDao.pdb
+C:\Users\isaik\OneDrive\liveGraph-develop\LiveGraph\LiveGraph.InterfaceDao\bin\Debug\netcoreapp1.1\LiveGraph.Common.dll
+C:\Users\isaik\OneDrive\liveGraph-develop\LiveGraph\LiveGraph.InterfaceDao\bin\Debug\netcoreapp1.1\LiveGraph.Common.pdb
+C:\Users\isaik\OneDrive\liveGraph-develop\LiveGraph\LiveGraph.InterfaceDao\obj\Debug\netcoreapp1.1\LiveGraph.InterfaceDao.csprojResolveAssemblyReference.cache
+C:\Users\isaik\OneDrive\liveGraph-develop\LiveGraph\LiveGraph.InterfaceDao\obj\Debug\netcoreapp1.1\LiveGraph.InterfaceDao.AssemblyInfo.cs
+C:\Users\isaik\OneDrive\liveGraph-develop\LiveGraph\LiveGraph.InterfaceDao\obj\Debug\netcoreapp1.1\LiveGraph.InterfaceDao.dll
+C:\Users\isaik\OneDrive\liveGraph-develop\LiveGraph\LiveGraph.InterfaceDao\obj\Debug\netcoreapp1.1\LiveGraph.InterfaceDao.pdb
