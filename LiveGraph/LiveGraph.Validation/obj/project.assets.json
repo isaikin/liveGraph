@@ -7503,10 +7503,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\isaik\\OneDrive\\liveGraph-develop\\LiveGraph\\LiveGraph.Validation\\LiveGraph.Validation.csproj",
+      "projectUniqueName": "C:\\Users\\isaik\\Documents\\liveGraph\\LiveGraph\\LiveGraph.Validation\\LiveGraph.Validation.csproj",
       "projectName": "LiveGraph.Validation",
-      "projectPath": "C:\\Users\\isaik\\OneDrive\\liveGraph-develop\\LiveGraph\\LiveGraph.Validation\\LiveGraph.Validation.csproj",
-      "outputPath": "C:\\Users\\isaik\\OneDrive\\liveGraph-develop\\LiveGraph\\LiveGraph.Validation\\obj\\",
+      "projectPath": "C:\\Users\\isaik\\Documents\\liveGraph\\LiveGraph\\LiveGraph.Validation\\LiveGraph.Validation.csproj",
+      "outputPath": "C:\\Users\\isaik\\Documents\\liveGraph\\LiveGraph\\LiveGraph.Validation\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"
@@ -7514,11 +7514,11 @@
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {
-            "C:\\Users\\isaik\\OneDrive\\liveGraph-develop\\LiveGraph\\LiveGraph.InterfaceDao\\LiveGraph.InterfaceDao.csproj": {
-              "projectPath": "C:\\Users\\isaik\\OneDrive\\liveGraph-develop\\LiveGraph\\LiveGraph.InterfaceDao\\LiveGraph.InterfaceDao.csproj"
+            "C:\\Users\\isaik\\Documents\\liveGraph\\LiveGraph\\LiveGraph.InterfaceDao\\LiveGraph.InterfaceDao.csproj": {
+              "projectPath": "C:\\Users\\isaik\\Documents\\liveGraph\\LiveGraph\\LiveGraph.InterfaceDao\\LiveGraph.InterfaceDao.csproj"
             },
-            "C:\\Users\\isaik\\OneDrive\\liveGraph-develop\\LiveGraph\\LiveGraph.Common\\LiveGraph.Common.csproj": {
-              "projectPath": "C:\\Users\\isaik\\OneDrive\\liveGraph-develop\\LiveGraph\\LiveGraph.Common\\LiveGraph.Common.csproj"
+            "C:\\Users\\isaik\\Documents\\liveGraph\\LiveGraph\\LiveGraph.Common\\LiveGraph.Common.csproj": {
+              "projectPath": "C:\\Users\\isaik\\Documents\\liveGraph\\LiveGraph\\LiveGraph.Common\\LiveGraph.Common.csproj"
             }
           }
         }

@@ -137,6 +137,9 @@
           "LiveGraph.Validation.dll": {}
         },
         "resources": {
+          "en-US/LiveGraph.Validation.resources.dll": {
+            "locale": "en-US"
+          },
           "ru-ru/LiveGraph.Validation.resources.dll": {
             "locale": "ru-ru"
           }

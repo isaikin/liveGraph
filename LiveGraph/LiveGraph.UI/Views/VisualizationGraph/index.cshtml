@@ -9,10 +9,14 @@
 
     <link href="~/css/VisualizationGraph.css" rel="stylesheet" />
 }
-<div id="Graph">
+<div id="graph">
 </div>
+<button id="Start">Start</button>
 @section Scripts {
 
     <script src="http://d3js.org/d3.v3.min.js"></script>
     <script src="~/js/VisualizationGraph.js"></script>
+<script>
+            $('#Start').click(start)
+</script>
 }

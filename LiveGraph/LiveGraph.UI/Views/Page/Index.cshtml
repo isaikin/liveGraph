@@ -3,10 +3,9 @@
     ViewData["Title"] = "PageEditor";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-@if (User.IsInRole("Admin"))
-{ 
-    @using (Html.BeginForm("Index", "Page", FormMethod.Post,
-                                                                                                                                new { @class = "form-horizontal" }))
+@if (User.HasClaim("Admin", "4"))
+{
+    @using (Html.BeginForm("Index", "Page", FormMethod.Post ,new { @class = "form-horizontal" }))
     { <div class="form-group">
             <label asp-for="Name" class="col-md-2 control-label"></label>
             <div class="col-md-10">

@@ -7160,10 +7160,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\isaik\\OneDrive\\liveGraph-develop\\LiveGraph\\LiveGraph.InterfaceBLL\\LiveGraph.InterfaceBLL.csproj",
+      "projectUniqueName": "C:\\Users\\isaik\\Documents\\liveGraph\\LiveGraph\\LiveGraph.InterfaceBLL\\LiveGraph.InterfaceBLL.csproj",
       "projectName": "LiveGraph.InterfaceBLL",
-      "projectPath": "C:\\Users\\isaik\\OneDrive\\liveGraph-develop\\LiveGraph\\LiveGraph.InterfaceBLL\\LiveGraph.InterfaceBLL.csproj",
-      "outputPath": "C:\\Users\\isaik\\OneDrive\\liveGraph-develop\\LiveGraph\\LiveGraph.InterfaceBLL\\obj\\",
+      "projectPath": "C:\\Users\\isaik\\Documents\\liveGraph\\LiveGraph\\LiveGraph.InterfaceBLL\\LiveGraph.InterfaceBLL.csproj",
+      "outputPath": "C:\\Users\\isaik\\Documents\\liveGraph\\LiveGraph\\LiveGraph.InterfaceBLL\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"
@@ -7171,8 +7171,8 @@
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {
-            "C:\\Users\\isaik\\OneDrive\\liveGraph-develop\\LiveGraph\\LiveGraph.Common\\LiveGraph.Common.csproj": {
-              "projectPath": "C:\\Users\\isaik\\OneDrive\\liveGraph-develop\\LiveGraph\\LiveGraph.Common\\LiveGraph.Common.csproj"
+            "C:\\Users\\isaik\\Documents\\liveGraph\\LiveGraph\\LiveGraph.Common\\LiveGraph.Common.csproj": {
+              "projectPath": "C:\\Users\\isaik\\Documents\\liveGraph\\LiveGraph\\LiveGraph.Common\\LiveGraph.Common.csproj"
             }
           }
         }

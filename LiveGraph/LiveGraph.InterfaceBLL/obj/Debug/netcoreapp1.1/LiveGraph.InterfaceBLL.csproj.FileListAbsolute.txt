@@ -7,3 +7,12 @@ C:\Users\isaik\OneDrive\liveGraph-develop\LiveGraph\LiveGraph.InterfaceBLL\obj\D
 C:\Users\isaik\OneDrive\liveGraph-develop\LiveGraph\LiveGraph.InterfaceBLL\obj\Debug\netcoreapp1.1\LiveGraph.InterfaceBLL.AssemblyInfo.cs
 C:\Users\isaik\OneDrive\liveGraph-develop\LiveGraph\LiveGraph.InterfaceBLL\obj\Debug\netcoreapp1.1\LiveGraph.InterfaceBLL.dll
 C:\Users\isaik\OneDrive\liveGraph-develop\LiveGraph\LiveGraph.InterfaceBLL\obj\Debug\netcoreapp1.1\LiveGraph.InterfaceBLL.pdb
+C:\Users\isaik\Documents\liveGraph\LiveGraph\LiveGraph.InterfaceBLL\bin\Debug\netcoreapp1.1\LiveGraph.InterfaceBLL.deps.json
+C:\Users\isaik\Documents\liveGraph\LiveGraph\LiveGraph.InterfaceBLL\bin\Debug\netcoreapp1.1\LiveGraph.InterfaceBLL.dll
+C:\Users\isaik\Documents\liveGraph\LiveGraph\LiveGraph.InterfaceBLL\bin\Debug\netcoreapp1.1\LiveGraph.InterfaceBLL.pdb
+C:\Users\isaik\Documents\liveGraph\LiveGraph\LiveGraph.InterfaceBLL\bin\Debug\netcoreapp1.1\LiveGraph.Common.dll
+C:\Users\isaik\Documents\liveGraph\LiveGraph\LiveGraph.InterfaceBLL\bin\Debug\netcoreapp1.1\LiveGraph.Common.pdb
+C:\Users\isaik\Documents\liveGraph\LiveGraph\LiveGraph.InterfaceBLL\obj\Debug\netcoreapp1.1\LiveGraph.InterfaceBLL.csprojResolveAssemblyReference.cache
+C:\Users\isaik\Documents\liveGraph\LiveGraph\LiveGraph.InterfaceBLL\obj\Debug\netcoreapp1.1\LiveGraph.InterfaceBLL.AssemblyInfo.cs
+C:\Users\isaik\Documents\liveGraph\LiveGraph\LiveGraph.InterfaceBLL\obj\Debug\netcoreapp1.1\LiveGraph.InterfaceBLL.dll
+C:\Users\isaik\Documents\liveGraph\LiveGraph\LiveGraph.InterfaceBLL\obj\Debug\netcoreapp1.1\LiveGraph.InterfaceBLL.pdb

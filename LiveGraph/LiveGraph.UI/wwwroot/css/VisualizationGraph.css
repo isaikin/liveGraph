@@ -12,9 +12,6 @@
         cursor: crosshair;
     }
 
-.active {
-
-}
 path.link {
     fill: none;
     stroke: #000;
@@ -24,12 +21,10 @@ path.link {
 
 svg:not(.active):not(.ctrl) path.link {
     cursor: pointer;
-    stroke: #000;
 }
 
 path.link.selected {
     stroke-dasharray: 10,2;
-    stroke: #f00;
 }
 
 path.link.dragline {
@@ -38,7 +33,6 @@ path.link.dragline {
 
 path.link.hidden {
     stroke-width: 0;
-
 }
 
 circle.node {

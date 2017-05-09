@@ -7146,10 +7146,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\isaik\\OneDrive\\liveGraph-develop\\LiveGraph\\LiveGraph.Common\\LiveGraph.Common.csproj",
+      "projectUniqueName": "C:\\Users\\isaik\\Documents\\liveGraph\\LiveGraph\\LiveGraph.Common\\LiveGraph.Common.csproj",
       "projectName": "LiveGraph.Common",
-      "projectPath": "C:\\Users\\isaik\\OneDrive\\liveGraph-develop\\LiveGraph\\LiveGraph.Common\\LiveGraph.Common.csproj",
-      "outputPath": "C:\\Users\\isaik\\OneDrive\\liveGraph-develop\\LiveGraph\\LiveGraph.Common\\obj\\",
+      "projectPath": "C:\\Users\\isaik\\Documents\\liveGraph\\LiveGraph\\LiveGraph.Common\\LiveGraph.Common.csproj",
+      "outputPath": "C:\\Users\\isaik\\Documents\\liveGraph\\LiveGraph\\LiveGraph.Common\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"

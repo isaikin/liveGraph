@@ -7978,10 +7978,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\isaik\\OneDrive\\liveGraph-develop\\LiveGraph\\LiveGraph.DAL\\LiveGraph.DAL.csproj",
+      "projectUniqueName": "C:\\Users\\isaik\\Documents\\liveGraph\\LiveGraph\\LiveGraph.DAL\\LiveGraph.DAL.csproj",
       "projectName": "LiveGraph.DAL",
-      "projectPath": "C:\\Users\\isaik\\OneDrive\\liveGraph-develop\\LiveGraph\\LiveGraph.DAL\\LiveGraph.DAL.csproj",
-      "outputPath": "C:\\Users\\isaik\\OneDrive\\liveGraph-develop\\LiveGraph\\LiveGraph.DAL\\obj\\",
+      "projectPath": "C:\\Users\\isaik\\Documents\\liveGraph\\LiveGraph\\LiveGraph.DAL\\LiveGraph.DAL.csproj",
+      "outputPath": "C:\\Users\\isaik\\Documents\\liveGraph\\LiveGraph\\LiveGraph.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"
@@ -7989,14 +7989,14 @@
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {
-            "C:\\Users\\isaik\\OneDrive\\liveGraph-develop\\LiveGraph\\LiveGraph.InterfaceDao\\LiveGraph.InterfaceDao.csproj": {
-              "projectPath": "C:\\Users\\isaik\\OneDrive\\liveGraph-develop\\LiveGraph\\LiveGraph.InterfaceDao\\LiveGraph.InterfaceDao.csproj"
+            "C:\\Users\\isaik\\Documents\\liveGraph\\LiveGraph\\LiveGraph.InterfaceDao\\LiveGraph.InterfaceDao.csproj": {
+              "projectPath": "C:\\Users\\isaik\\Documents\\liveGraph\\LiveGraph\\LiveGraph.InterfaceDao\\LiveGraph.InterfaceDao.csproj"
             },
-            "C:\\Users\\isaik\\OneDrive\\liveGraph-develop\\LiveGraph\\LiveGraph.Common\\LiveGraph.Common.csproj": {
-              "projectPath": "C:\\Users\\isaik\\OneDrive\\liveGraph-develop\\LiveGraph\\LiveGraph.Common\\LiveGraph.Common.csproj"
+            "C:\\Users\\isaik\\Documents\\liveGraph\\LiveGraph\\LiveGraph.Common\\LiveGraph.Common.csproj": {
+              "projectPath": "C:\\Users\\isaik\\Documents\\liveGraph\\LiveGraph\\LiveGraph.Common\\LiveGraph.Common.csproj"
             },
-            "C:\\Users\\isaik\\OneDrive\\liveGraph-develop\\LiveGraph\\LiveGraph.InterfaceBLL\\LiveGraph.InterfaceBLL.csproj": {
-              "projectPath": "C:\\Users\\isaik\\OneDrive\\liveGraph-develop\\LiveGraph\\LiveGraph.InterfaceBLL\\LiveGraph.InterfaceBLL.csproj"
+            "C:\\Users\\isaik\\Documents\\liveGraph\\LiveGraph\\LiveGraph.InterfaceBLL\\LiveGraph.InterfaceBLL.csproj": {
+              "projectPath": "C:\\Users\\isaik\\Documents\\liveGraph\\LiveGraph\\LiveGraph.InterfaceBLL\\LiveGraph.InterfaceBLL.csproj"
             }
           }
         }

@@ -1,8 +1,9 @@
 ﻿var width = 960,
     height = 500,
-    colors = () => "#f7ed08";
+    color = "#360cea",
+    colorSmoke = "#fff"
 
-var svg = d3.select('#Graph')
+var svg = d3.select('#graph')
     .append('svg')
     .attr('oncontextmenu', 'return false;')
     .attr('width', width)
@@ -13,9 +14,9 @@ var svg = d3.select('#Graph')
 //  - reflexive edges are indicated on the node (as a bold black circle).
 //  - links are always source < target; edge directions are set by 'left' and 'right'.
 var nodes = [
-    { id: 0, reflexive: false, color: "#ff01ff" },
-    { id: 1, reflexive: true, color: "#ff01ff" },
-    { id: 2, reflexive: false, color: "#ff01ff" }
+    { id: 0, reflexive: false, color : "#a1fa01"},
+    { id: 1, reflexive: true, color :"#a1fa01"},
+    { id: 2, reflexive: false, color :"#a1fa01" }
 ],
     lastNodeId = 2,
     links = [
@@ -46,14 +47,14 @@ svg.append('svg:defs').append('svg:marker')
 
 svg.append('svg:defs').append('svg:marker')
     .attr('id', 'start-arrow')
-    .attr('viewBox', '0 -50 10 10')
+    .attr('viewBox', '0 -5 10 10')
     .attr('refX', 4)
     .attr('markerWidth', 3)
     .attr('markerHeight', 3)
     .attr('orient', 'auto')
     .append('svg:path')
     .attr('d', 'M10,-5L0,0L10,5')
-    .attr('fill', '#00');
+    .attr('fill', '#000');
 
 // line displayed when dragging new nodes
 var drag_line = svg.append('svg:path')
@@ -138,7 +139,7 @@ function restart() {
 
     // update existing nodes (reflexive & selected visual states)
     circle.selectAll('circle')
-        .style('fill', function (d) { return (d === selected_node) ? d3.rgb("#010fed").brighter().toString() : d.color; })
+        .style('fill', function (d) { return (d === selected_node) ? color : d.color; })
         .classed('reflexive', function (d) { return d.reflexive; });
 
     // add new nodes
@@ -146,10 +147,9 @@ function restart() {
 
     g.append('svg:circle')
         .attr('class', 'node')
-        .attr('color', '#fffdee')
         .attr('r', 12)
-        .style('fill', function (d) { return (d === selected_node) ? d3.rgb(colors(d.id)).brighter().toString() : d.color; })
-        .style('stroke', function (d) { return d3.rgb(colors(d.id)).darker().toString(); })
+        .style('fill', function (d) { return (d === selected_node) ? color : d.color; })
+        .style('stroke', function (d) { return d3.rgb(colorSmoke).darker().toString(); })
         .classed('reflexive', function (d) { return d.reflexive; })
         .on('mouseover', function (d) {
             if (!mousedown_node || d === mousedown_node) return;
@@ -253,7 +253,7 @@ function mousedown() {
         node = { id: ++lastNodeId, reflexive: false };
     node.x = point[0];
     node.y = point[1];
-    nodes.color = "#fffdee";
+    node.color = "#a1fa01";
     nodes.push(node);
 
     restart();
@@ -372,18 +372,65 @@ d3.select(window)
     .on('keyup', keyup);
 restart();
 
-function Fill(j) {
-    // update existing nodes (reflexive & selected visual states)
-    for (var i = 0; i < nodes.length; i++) {
-        if (nodes[i].id == j) {
-            nodes[i] = '#fff';
-            restart();
-           
-            ; break;
+let id;
+function stopViz() {
+    window.clearInterval(id);
+}
+
+function Fill(j, array) {
+    if (j >= nodes.length) {
+        stopViz();
+    }
+    nodes[array[j]].color = "#fa0307";
+    restart();
+}
+
+function bfs(graph) {
+    let q = [],
+        isVisit = [],
+        result = [];
+    q.push(0);
+    result.push(selected_node.id);
+    for (let i = 0; i < graph.length; i++) {
+        isVisit[i] = false;
+    }
+
+    while (q.length > 0){
+        var v = q.shift();
+        if (!isVisit[v]) {
+            for (let i = 0; i < graph[v].length; i++) {
+                q.push(graph[v][i]);
+                result.push(graph[v][i]);
+                isVisit[v] = true;
+            }
         }
 
     }
-
+    return result;
 }
-let i = 0;
-setInterval(() => { Fill(i); i++ }, 2000)
+
+
+function start() {
+    var graph = [];
+    for (var i = 0; i < nodes.length; i++) {
+        graph[nodes[i].id] = [];
+    }
+
+    for (var i = 0; i < links.length; i++) {
+        let first = links[i].source.id;
+        let second = links[i].target.id;
+
+        if (links[i].left) {
+            graph[second].push(first);
+        }
+
+        if (links[i].right) {
+            graph[first].push(second);
+
+        }
+
+    }
+    let j = 0;
+    var g = bfs(graph);
+    id = setInterval(() => { Fill(j,g); j++ }, 2000)
+}
